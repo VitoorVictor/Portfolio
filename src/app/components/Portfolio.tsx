@@ -36,7 +36,7 @@ export const Portfolio = () => {
     }
 
     return(
-        <div className="flex flex-col items-center text-white w-full py-40 max-h-screen bg-bodyColor"
+        <div className="flex flex-col items-center text-white w-full lg:py-40 md:py-20 py-10  max-h-screen bg-bodyColor"
         id="Portfólio">
             <h1 className="text-3xl font-bold p-2">
                 Projetos

@@ -17,7 +17,7 @@ export const Contacts = () => {
   };
 
   return (
-    <div className=" bg-bodyColor px-6 pb-5 pt-24 sm:pt-32 lg:px-8"
+    <div className=" bg-bodyColor px-6 pb-5 pt-10 sm:pt-32 lg:px-8"
     id="Contatos">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Contate me</h2>
@@ -122,20 +122,20 @@ export const Contacts = () => {
           </button>
         </div>
       </form>
-      <footer className='mt-20 mx-auto max-w-2xl text-white font-bold' >
-        <div className="flex justify-between items-center">
-            <div>
-                <h2>Email: <span onClick={() => copyToClipboard('vitorvictorblasq@gmail.com')} className='hover:underline hover:cursor-pointer hover:text-gray-400'>vitorvictorblasq@gmail.com</span></h2>
-                <h2>Celular: <span onClick={() => copyToClipboard('+55 (44) 98404-2566')} className='hover:underline hover:cursor-pointer  hover:text-gray-400'>+55 (44) 98404-2566</span></h2>
+      <footer className='my-20 mx-auto max-w-2xl text-white font-bold' >
+        <div className="flex md:flex-row flex-col justify-between items-center">
+            <div className='text-center md:text-start'>
+                <h2 className='text-blue-300 font-bold'>Email: <span onClick={() => copyToClipboard('vitorvictorblasq@gmail.com')} className=' text-white hover:underline hover:cursor-pointer hover:text-gray-400'>vitorvictorblasq@gmail.com</span></h2>
+                <h2 className='text-blue-300 font-bold'>Celular: <span onClick={() => copyToClipboard('+55 (44) 98404-2566')} className=' text-white hover:underline hover:cursor-pointer  hover:text-gray-400'>+55 (44) 98404-2566</span></h2>
                 {showToast && (
-                    <div className="fixed bottom-5 left-1/2 transform -translate-x-1/2 text-sm bg-purpleColor text-white px-4 py-2 rounded-md transition-all duration-500 ease-in-out">
+                    <div className="fixed bottom-5 left-1/2 transform -translate-x-1/2 text-sm bg-purpleColor text-white px-4 py-2 rounded-md transition-all duration-300 ease-in-out">
                     {toastMessage}
                     </div>
                 )}
             </div>
-            <div className='text-end'>
-                <h2>Github: <a href='https://github.com/VitoorVictor' className='hover:underline hover:text-gray-400'>https://github.com/VitoorVictor</a></h2>
-                <h2>Linkedin: <a href='https://www.linkedin.com/in/vitor-victor/' className='hover:underline hover:text-gray-400'>https://www.linkedin.com/in/vitor-victor</a></h2>
+            <div className='text-center md:text-end'>
+                <h2 className='text-blue-300 font-bold'>Github: <a href='https://github.com/VitoorVictor' className=' text-white hover:underline hover:text-gray-400'>https://github.com/VitoorVictor</a></h2>
+                <h2 className='text-blue-300 font-bold'>Linkedin: <a href='https://www.linkedin.com/in/vitor-victor/' className=' text-white hover:underline hover:text-gray-400'>https://www.linkedin.com/in/vitor-victor</a></h2>
             </div>
         </div>
       </footer>

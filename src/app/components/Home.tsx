@@ -112,7 +112,7 @@ export const Home = () => {
         <div className="absolute bottom-0 left-0 w-full flex justify-center mb-12 z-50">
           <a
             className="cursor-pointer animate-bounce"
-            href="#About"
+            href="#Sobre"
             // onClick={() => handleNextSession(aboutRef)}
           >
             <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none">

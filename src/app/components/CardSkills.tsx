@@ -5,7 +5,7 @@ interface ICardSkillsProps {
     id: number
     title: string,
     logo: string,
-    description: string,
+    description: string[],
     experience: string,
 }
 
@@ -31,10 +31,12 @@ export const CardSkills:React.FC<ICardSkillsProps> = ({id, title, logo, descript
             <div
               className={`${styles.back} absolute w-full h-full flex flex-col items-center justify-between text-white py-2`}
             >
-              <div className="description md:w-48 w-32 md:overflow-visible overflow-scroll text-center">
-                <p className="mb-1 text-sm">
-                  {description}
+              <div className="description md:w-48 w-32 overflow-y-auto text-center">
+                {description.map((desc:string, index:number) => (
+                  <p key={index} className="mb-1 text-sm">
+                  {desc}
                 </p>
+                ))}
               </div>
               <div className="experience flex flex-col items-center justify-center w-5/6 mt-4">
                 <div className="w-full bg-gray-300 rounded-full h-2">

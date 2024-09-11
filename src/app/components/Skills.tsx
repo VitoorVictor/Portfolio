@@ -3,7 +3,7 @@ import { skillsArray, Skill } from '../data/index';
 
 export const Skills = () => {
   return (
-    <div className="flex flex-col justify-center items-center text-bodyColor mb-24 py-10"
+    <div className="flex flex-col justify-center items-center bg-gray-400 text-bodyColor pb-24 py-10"
     id="Habilidades">
       <h1 className="text-3xl font-bold mb-20">
         Habilidades

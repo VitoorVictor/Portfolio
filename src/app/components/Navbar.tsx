@@ -49,18 +49,6 @@ export const Navbar = () => {
       className="w-full flex items-center p-8 sm:px-16 sm:py-10 fixed z-40 md:pointer-events-none"
     >
       <div className='w-full flex justify-end items-start mx-auto'>
-        {/* <Link
-          to='/'
-          className='flex items-start'
-          onClick={() => {
-            setActive("hero");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <p className='text-white text-[26px] lg:text-[36px] font-bold pointer-events-auto cursor-pointer flex'>
-            VV
-          </p>
-        </Link> */}
 
         <ul className='hidden sm:flex flex-col gap-5'>
           {navLinksArray.map((nav: NavLink) => (
