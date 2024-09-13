@@ -22,7 +22,7 @@ export const Home = () => {
     // const homeRef = useRef<HTMLDivElement>(null);
     const textRef = useRef<HTMLDivElement>(null);
     const [text] = useTypewriter({
-        words: ['Vitor Victor!', 'Developer Web!'],
+        words: ['Vitor Victor!', 'Web Developer!'],
         typeSpeed: 150,
         deleteSpeed: 80,
     });

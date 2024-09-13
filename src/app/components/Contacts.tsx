@@ -100,7 +100,7 @@ export const Contacts = () => {
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="message" className="block text-sm font-semibold leading-6 text-white">
-              Menssagem
+              Mensagem
             </label>
             <div className="mt-1">
               <textarea
